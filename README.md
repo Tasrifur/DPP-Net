@@ -6,26 +6,6 @@ DPP-Net enrolls a new gait identity by averaging the embeddings of a handful of 
 
 Manuscript under review at *Intelligent Systems with Applications*.
 
----
-
-## Results this code reproduces
-
-| | NM | BG | CL | Mean |
-|---|---|---|---|---|
-| CASIA-B same-view (Table 3) | 99.21 | 98.59 | 92.42 | **96.74** |
-| CASIA-B cross-view, identical view excluded (Table 6) | 76.33 | 69.32 | 58.39 | **68.01** |
-| CASIA-E zero-shot (Table 8) | 95.19 | 72.31 | 68.21 | **78.57** |
-| OU-MVLP zero-shot (Table 8) | — | — | — | **89.39** |
-
-Ablation (Table 4), same-view CCR averaged over all angles:
-
-| Condition | Fixed uniform | Learned dynamic | Gain |
-|---|---|---|---|
-| NM | 99.13 | 99.18 | +0.05 |
-| BG | 81.61 | 98.56 | +16.95 |
-| CL | 35.66 | 92.04 | **+56.38** |
-
-The attention is worth nothing when the silhouette is clean and is decisive once a covariate corrupts it. Note that the encoder is trained jointly with the attention, so this gap measures the contribution of the weighting *within this jointly trained model*; it is not the gap that would separate an independently optimised unweighted part metric from DPP-Net.
 
 ---
 
@@ -48,8 +28,8 @@ Python 3.9+ and PyTorch 2.x. A GPU is recommended for training but not required;
 
 | Dataset | Where to request |
 |---|---|
-| CASIA-B | Institute of Automation, Chinese Academy of Sciences — <http://www.cbsr.ia.ac.cn/english/GaitDatabases.asp> |
-| CASIA-E | Institute of Automation, Chinese Academy of Sciences — <http://www.cbsr.ia.ac.cn/english/GaitDatabases.asp> |
+| CASIA-B | Institute of Automation, Chinese Academy of Sciences — <http://www.cbsr.ia.ac.cn/english/Gait%20Databases.asp> |
+| CASIA-E | Institute of Automation, Chinese Academy of Sciences — <https://www.scidb.cn/en/detail?dataSetId=57be0e918db743279baf44a38d013a06> |
 | OU-MVLP | Osaka University, Institute of Scientific and Industrial Research — <http://www.am.sanken.osaka-u.ac.jp/BiometricDB/GaitMVLP.html> |
 
 Each requires a signed licence agreement. Approval typically takes days to weeks. This repository contains code only.
@@ -190,7 +170,7 @@ results/
 
 ## Citation
 
-The manuscript is under review. Until it appears, please cite this software via the Zenodo DOI (see `CITATION.cff`).
+The manuscript is under review. Until it appears, please cite this via the Zenodo DOI (see `CITATION.cff`).
 
 ```bibtex
 @software{riahi_dppnet,
