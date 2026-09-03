@@ -17,6 +17,8 @@ authors:
     given-names: "Hossen A"
     affiliation: "Institute of Information and Communication Technology, Bangladesh University of Engineering and Technology"
 version: "1.0.0"
+doi: "10.5281/zenodo.22274622"
+repository-code: "https://github.com/Tasrifur/DPP-Net"
 license: MIT
 keywords:
   - gait recognition
