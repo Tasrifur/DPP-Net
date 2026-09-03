@@ -178,7 +178,7 @@ The manuscript is under review. Until it appears, please cite this via the Zenod
   title   = {{DPP-Net}: A Dynamic Part-Aware Framework for Few-Shot Rapid
              Enrollment in Cross-Condition Gait Recognition},
   year    = {2026},
-  url     = {https://github.com/Tasrifur/DPP-Net}
+  url     = {https://doi.org/10.5281/zenodo.22274621}
 }
 ```
 
