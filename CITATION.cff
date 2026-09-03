@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "DPP-Net: A Dynamic Part-Aware Framework for Few-Shot Rapid Enrollment in Cross-Condition Gait Recognition"
+abstract: >-
+  Reference implementation of DPP-Net, a dynamic part-aware prototypical
+  framework for few-shot cross-condition gait recognition. A part-aware encoder
+  decomposes each gait energy image into eight body-region descriptors, and a
+  residual-conditioned attention module reweights those regions per query, so
+  that new identities are enrolled from a handful of samples with no retraining
+  using only 0.685M parameters.
+type: software
+authors:
+  - family-names: Riahi
+    given-names: Tasrifur
+    affiliation: "Institute of Information and Communication Technology, Bangladesh University of Engineering and Technology"
+  - family-names: Mustafa
+    given-names: "Hossen A"
+    affiliation: "Institute of Information and Communication Technology, Bangladesh University of Engineering and Technology"
+version: "1.0.0"
+license: MIT
+keywords:
+  - gait recognition
+  - few-shot learning
+  - prototypical networks
+  - attention mechanism
+  - biometric identification
+notes: >-
+  The associated manuscript is under review at Intelligent Systems with
+  Applications. This entry will be updated with the journal DOI on acceptance.
